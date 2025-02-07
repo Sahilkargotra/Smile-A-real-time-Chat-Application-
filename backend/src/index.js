@@ -7,12 +7,13 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import {server,app} from "./lib/socket.js";
 import path from "path";
+import { fileURLToPath } from "url";
 
 dotenv.config()
 
 
 const PORT = process.env.PORT;
-const __dirname = 
+const __dirname = path.resolve();
 
 
 app.use(express.json({limit:"50mb"})); // this will  allow the  req.body  to  get the data  in json fromat 
