@@ -10,7 +10,7 @@ import { useAuthStore } from './store/useAuthStore';
 import { useEffect } from 'react';
 import { Loader } from 'lucide-react';
 import { Toaster } from 'react-hot-toast';
-import NavBar from './components/NavBar.jsx';
+import NavBar from './components/Navbar.jsx';
 import { useThemeStore } from './store/useTheme.js';
 
 const App = () => {
